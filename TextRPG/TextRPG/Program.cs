@@ -61,7 +61,6 @@ namespace TextRPG
 
         static void CreatePlayer(ClassType choice, out Player player)
         {
-            // Knight(100/10) Archer(75/12) magicion(50/15)
             switch (choice)
             {
                 case ClassType.Knight:
@@ -117,7 +116,6 @@ namespace TextRPG
         {
             while (true)
             {
-                // Player attacks monster
                 monster.hp -= player.attack;
                 if (monster.hp <= 0)
                 {
@@ -126,7 +124,6 @@ namespace TextRPG
                     break;
                 }
 
-                // Monster attacks player
                 player.hp -= monster.attack;
                 if (player.hp <= 0)
                 {
@@ -142,10 +139,7 @@ namespace TextRPG
             {
                 Console.WriteLine("You entered field!");
 
-                // Create Monster
                 Monster monster;
-
-                // Respon one monster among 3 random monsters
                 CreateRandomMonster(out monster);
 
                 Console.WriteLine("[1] Change Battle Mode");
@@ -158,7 +152,6 @@ namespace TextRPG
                 }
                 else if (input == "2")
                 {
-                    // Run away chance: 33%
                     Random rand = new Random();
                     int randValue = rand.Next(0, 101);
                     if (randValue <= 33)
@@ -202,10 +195,8 @@ namespace TextRPG
                 if (choice == ClassType.None)
                     continue;
 
-                // Create Player
                 Player player;
                 CreatePlayer(choice, out player);
-                // Go to field and fight with monster
                 EnterGame(ref player);
             }
         }
