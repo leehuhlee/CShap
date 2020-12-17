@@ -1,0 +1,13 @@
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\bin\Debug\netcoreapp3.1\TextRPG.exe
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\bin\Debug\netcoreapp3.1\TextRPG.deps.json
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\bin\Debug\netcoreapp3.1\TextRPG.runtimeconfig.json
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\bin\Debug\netcoreapp3.1\TextRPG.runtimeconfig.dev.json
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\bin\Debug\netcoreapp3.1\TextRPG.dll
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\bin\Debug\netcoreapp3.1\TextRPG.pdb
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\obj\Debug\netcoreapp3.1\TextRPG.csprojAssemblyReference.cache
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\obj\Debug\netcoreapp3.1\TextRPG.AssemblyInfoInputs.cache
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\obj\Debug\netcoreapp3.1\TextRPG.AssemblyInfo.cs
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\obj\Debug\netcoreapp3.1\TextRPG.csproj.CoreCompileInputs.cache
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\obj\Debug\netcoreapp3.1\TextRPG.dll
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\obj\Debug\netcoreapp3.1\TextRPG.pdb
+C:\Users\leehu\Desktop\CShap\TextRPG\TextRPG\obj\Debug\netcoreapp3.1\TextRPG.genruntimeconfig.cache
