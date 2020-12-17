@@ -2,6 +2,13 @@
 
 namespace RockScissorsPaper
 {
+    enum Choice
+    {
+        Rock = 0,
+        Scissors = 1,
+        Paper = 2
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -14,37 +21,37 @@ namespace RockScissorsPaper
 
             switch (choice)
             {
-                case 0:
+                case (int)Choice.Rock:
                     Console.WriteLine("Your choice is rock.");
                     break;
-                case 1:
+                case (int)Choice.Scissors:
                     Console.WriteLine("Your choice is scissors.");
                     break;
-                case 2:
+                case (int)Choice.Paper:
                     Console.WriteLine("Your choice is paper.");
                     break;
             }
 
             switch (aiChoice)
             {
-                case 0:
+                case (int)Choice.Rock:
                     Console.WriteLine("AI choice is rock.");
                     break;
-                case 1:
+                case (int)Choice.Scissors:
                     Console.WriteLine("AI choice is scissors.");
                     break;
-                case 2:
+                case (int)Choice.Paper:
                     Console.WriteLine("AI choice is paper.");
                     break;
             }
 
-            if(choice == 0)
+            if(choice == (int)Choice.Rock)
             {
-                if(aiChoice == 0)
+                if(aiChoice == (int)Choice.Rock)
                 {
                     Console.WriteLine("Draw :|");
                 }
-                else if(aiChoice == 1)
+                else if(aiChoice == (int)Choice.Scissors)
                 {
                     Console.WriteLine("Win :)");
                 }
@@ -53,13 +60,13 @@ namespace RockScissorsPaper
                     Console.WriteLine("Lose :(");
                 }
             }
-            else if(choice == 1)
+            else if(choice == (int)Choice.Scissors)
             {
-                if (aiChoice == 0)
+                if (aiChoice == (int)Choice.Rock)
                 {
                     Console.WriteLine("Lose :(");
                 }
-                else if (aiChoice == 1)
+                else if (aiChoice == (int)Choice.Scissors)
                 {
                     Console.WriteLine("Draw :|");
                 }
@@ -70,11 +77,11 @@ namespace RockScissorsPaper
             }
             else
             {
-                if (aiChoice == 0)
+                if (aiChoice == (int)Choice.Rock)
                 {
                     Console.WriteLine("Win :)");
                 }
-                else if (aiChoice == 1)
+                else if (aiChoice == (int)Choice.Scissors)
                 {
                     Console.WriteLine("Lose :(");
                 }
