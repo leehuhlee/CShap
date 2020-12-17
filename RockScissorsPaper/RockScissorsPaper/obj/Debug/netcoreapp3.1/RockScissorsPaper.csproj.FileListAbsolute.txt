@@ -1,0 +1,13 @@
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\bin\Debug\netcoreapp3.1\RockScissorsPaper.exe
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\bin\Debug\netcoreapp3.1\RockScissorsPaper.deps.json
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\bin\Debug\netcoreapp3.1\RockScissorsPaper.runtimeconfig.json
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\bin\Debug\netcoreapp3.1\RockScissorsPaper.runtimeconfig.dev.json
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\bin\Debug\netcoreapp3.1\RockScissorsPaper.dll
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\bin\Debug\netcoreapp3.1\RockScissorsPaper.pdb
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\obj\Debug\netcoreapp3.1\RockScissorsPaper.csprojAssemblyReference.cache
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\obj\Debug\netcoreapp3.1\RockScissorsPaper.AssemblyInfoInputs.cache
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\obj\Debug\netcoreapp3.1\RockScissorsPaper.AssemblyInfo.cs
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\obj\Debug\netcoreapp3.1\RockScissorsPaper.csproj.CoreCompileInputs.cache
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\obj\Debug\netcoreapp3.1\RockScissorsPaper.dll
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\obj\Debug\netcoreapp3.1\RockScissorsPaper.pdb
+C:\Users\leehu\Desktop\CShap\RockScissorsPaper\RockScissorsPaper\obj\Debug\netcoreapp3.1\RockScissorsPaper.genruntimeconfig.cache
