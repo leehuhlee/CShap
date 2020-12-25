@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeMaze", "BinaryTreeMaze\BinaryTreeMaze.csproj", "{624F68FF-DC8C-4C84-8A50-0C35AD033360}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{624F68FF-DC8C-4C84-8A50-0C35AD033360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{624F68FF-DC8C-4C84-8A50-0C35AD033360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{624F68FF-DC8C-4C84-8A50-0C35AD033360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{624F68FF-DC8C-4C84-8A50-0C35AD033360}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E959D1D-EEFF-48FB-BC90-40F16FAEBEFC}
+	EndGlobalSection
+EndGlobal
