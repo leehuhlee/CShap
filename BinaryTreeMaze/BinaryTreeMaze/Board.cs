@@ -17,7 +17,7 @@ namespace BinaryTreeMaze
             Wall,
         }
 
-        public void Initialize(int size)
+        public void GeneratedByBinaryTree(int size)
         {
             if (size % 2 == 0)
                 return;
@@ -45,22 +45,18 @@ namespace BinaryTreeMaze
             {
                 for (int x = 0; x < _size; x++)
                 {
-                    // Pass in wall
                     if (x % 2 == 0 || y % 2 == 0)
                         continue;
 
-                    // Pass in [size - 2, size - 2]
-                    if (y == _size - 2 && x == _size - 2)
+                    if (x == _size - 2 && y == _size - 2)
                         continue;
 
-                    // Change only right direction
                     if (y == _size - 2)
                     {
                         _tile[y, x + 1] = TileType.Empty;
                         continue;
                     }
 
-                    // Change only bottom direction
                     if (x == _size - 2)
                     {
                         _tile[y + 1, x] = TileType.Empty;

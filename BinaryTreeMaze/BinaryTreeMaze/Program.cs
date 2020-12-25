@@ -7,7 +7,7 @@ namespace BinaryTreeMaze
         static void Main(string[] args)
         {
             Board board = new Board();
-            board.Initialize(25);
+            board.GeneratedByBinaryTree(25);
 
             Console.CursorVisible = false;
 
