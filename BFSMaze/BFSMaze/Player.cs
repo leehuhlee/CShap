@@ -29,7 +29,7 @@ namespace BFSMaze
         int _dir = (int)Dir.Up;
         List<Pos> _points = new List<Pos>();
 
-        public void Initionalize(int posY, int posX, Board board)
+        public void Initialize(int posY, int posX, Board board)
         {
             PosY = posY;
             PosX = posX;

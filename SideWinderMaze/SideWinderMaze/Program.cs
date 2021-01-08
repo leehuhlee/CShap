@@ -10,7 +10,7 @@ namespace SideWinderMaze
             Player player = new Player();
 
             board.Initialize(25, player);
-            player.Initionalize(1, 1, board);
+            player.Initialize(1, 1, board);
 
             Console.CursorVisible = false;
 

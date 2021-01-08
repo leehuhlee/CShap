@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 
-namespace BFSMaze
+namespace AStarAlgorithm
 {
+
     class Program
     {
         static void Main(string[] args)
