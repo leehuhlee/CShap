@@ -1,11 +1,58 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Humanizer.Core/2.8.26": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Humanizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Humanizer.dll": {}
+        }
+      },
+      "BankyStuffLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Humanizer.Core": "2.8.26"
+        },
+        "compile": {
+          "bin/placeholder/BankyStuffLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankyStuffLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Humanizer.Core/2.8.26": {
+      "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
+      "type": "package",
+      "path": "humanizer.core/2.8.26",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.2.8.26.nupkg.sha512",
+        "humanizer.core.nuspec",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml",
+        "logo.png"
+      ]
+    },
+    "BankyStuffLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BankyStuffLibrary/BankyStuffLibrary.csproj",
+      "msbuildProject": "../BankyStuffLibrary/BankyStuffLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "BankyStuffLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\leehu\\.nuget\\packages\\": {}
@@ -33,7 +80,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\leehu\\Desktop\\CShap\\MySuperBank\\BankyStuffLibrary\\BankyStuffLibrary.csproj": {
+              "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\MySuperBank\\BankyStuffLibrary\\BankyStuffLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

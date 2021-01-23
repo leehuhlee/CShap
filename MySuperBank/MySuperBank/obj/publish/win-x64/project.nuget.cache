@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "UCydTFWx6dfgpMC21ytiLVBoURP6B30OVmWWYD7qxyJ1bL5ZYtwSx6mUuxaVZRkIBAPbUHUPqdSr2xZ5XqhHXA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leehu\\Desktop\\CShap\\MySuperBank\\MySuperBank\\MySuperBank.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leehu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\leehu\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.11\\microsoft.netcore.app.runtime.win-x64.3.1.11.nupkg.sha512",
+    "C:\\Users\\leehu\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.11\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.11.nupkg.sha512",
+    "C:\\Users\\leehu\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.11\\microsoft.aspnetcore.app.runtime.win-x64.3.1.11.nupkg.sha512"
+  ],
+  "logs": []
+}

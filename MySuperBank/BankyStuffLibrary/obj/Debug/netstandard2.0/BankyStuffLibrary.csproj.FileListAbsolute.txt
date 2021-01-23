@@ -1,0 +1,9 @@
+C:\Users\leehu\Desktop\CShap\MySuperBank\BankyStuffLibrary\bin\Debug\netstandard2.0\BankyStuffLibrary.deps.json
+C:\Users\leehu\Desktop\CShap\MySuperBank\BankyStuffLibrary\bin\Debug\netstandard2.0\BankyStuffLibrary.dll
+C:\Users\leehu\Desktop\CShap\MySuperBank\BankyStuffLibrary\bin\Debug\netstandard2.0\BankyStuffLibrary.pdb
+C:\Users\leehu\Desktop\CShap\MySuperBank\BankyStuffLibrary\obj\Debug\netstandard2.0\BankyStuffLibrary.csprojAssemblyReference.cache
+C:\Users\leehu\Desktop\CShap\MySuperBank\BankyStuffLibrary\obj\Debug\netstandard2.0\BankyStuffLibrary.AssemblyInfoInputs.cache
+C:\Users\leehu\Desktop\CShap\MySuperBank\BankyStuffLibrary\obj\Debug\netstandard2.0\BankyStuffLibrary.AssemblyInfo.cs
+C:\Users\leehu\Desktop\CShap\MySuperBank\BankyStuffLibrary\obj\Debug\netstandard2.0\BankyStuffLibrary.csproj.CoreCompileInputs.cache
+C:\Users\leehu\Desktop\CShap\MySuperBank\BankyStuffLibrary\obj\Debug\netstandard2.0\BankyStuffLibrary.dll
+C:\Users\leehu\Desktop\CShap\MySuperBank\BankyStuffLibrary\obj\Debug\netstandard2.0\BankyStuffLibrary.pdb
