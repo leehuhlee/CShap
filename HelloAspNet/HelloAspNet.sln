@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloEmptyRazor", "HelloEmp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloEmptyMVC", "HelloEmptyMVC\HelloEmptyMVC.csproj", "{CF76545D-6F5A-4C29-9E51-51FAA9955539}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloEmptyWebAPI", "HelloEmptyWebAPI\HelloEmptyWebAPI.csproj", "{99FA6A6E-7B14-4413-BFAB-20D820F79D14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{CF76545D-6F5A-4C29-9E51-51FAA9955539}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF76545D-6F5A-4C29-9E51-51FAA9955539}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF76545D-6F5A-4C29-9E51-51FAA9955539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FA6A6E-7B14-4413-BFAB-20D820F79D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FA6A6E-7B14-4413-BFAB-20D820F79D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FA6A6E-7B14-4413-BFAB-20D820F79D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FA6A6E-7B14-4413-BFAB-20D820F79D14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
