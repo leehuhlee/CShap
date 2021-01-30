@@ -1,0 +1,13 @@
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\bin\Debug\netcoreapp3.1\LINQRPG.exe
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\bin\Debug\netcoreapp3.1\LINQRPG.deps.json
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\bin\Debug\netcoreapp3.1\LINQRPG.runtimeconfig.json
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\bin\Debug\netcoreapp3.1\LINQRPG.runtimeconfig.dev.json
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\bin\Debug\netcoreapp3.1\LINQRPG.dll
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\bin\Debug\netcoreapp3.1\LINQRPG.pdb
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\obj\Debug\netcoreapp3.1\LINQRPG.csprojAssemblyReference.cache
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\obj\Debug\netcoreapp3.1\LINQRPG.AssemblyInfoInputs.cache
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\obj\Debug\netcoreapp3.1\LINQRPG.AssemblyInfo.cs
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\obj\Debug\netcoreapp3.1\LINQRPG.csproj.CoreCompileInputs.cache
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\obj\Debug\netcoreapp3.1\LINQRPG.dll
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\obj\Debug\netcoreapp3.1\LINQRPG.pdb
+C:\Users\leehu\Desktop\CShap\LINQRPG\LINQRPG\obj\Debug\netcoreapp3.1\LINQRPG.genruntimeconfig.cache
