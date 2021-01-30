@@ -1,0 +1,32 @@
+﻿@page "/counter"
+
+@using System.Threading;
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-secondary" @onclick="AutoIncrement">Auto Increment</button>
+
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    void AutoIncrement()
+    {
+        var timer = new Timer(x =>
+        {
+            InvokeAsync(() =>
+            {
+                IncrementCount();
+                StateHasChanged();
+            });
+        }, null, 1000, 1000);
+    }
+}
