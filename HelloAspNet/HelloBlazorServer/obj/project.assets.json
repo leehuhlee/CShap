@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloBlazorServer\\HelloBlazorServer.csproj",
+      "projectUniqueName": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloBlazorServer\\HelloBlazorServer.csproj",
       "projectName": "HelloBlazorServer",
-      "projectPath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloBlazorServer\\HelloBlazorServer.csproj",
+      "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloBlazorServer\\HelloBlazorServer.csproj",
       "packagesPath": "C:\\Users\\leehu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloBlazorServer\\obj\\",
+      "outputPath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloBlazorServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leehu\\AppData\\Roaming\\NuGet\\NuGet.Config",

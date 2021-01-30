@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloBlazorClient\\HelloBlazorClient.csproj": {}
+    "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloBlazorClient\\HelloBlazorClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloBlazorClient\\HelloBlazorClient.csproj": {
+    "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloBlazorClient\\HelloBlazorClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloBlazorClient\\HelloBlazorClient.csproj",
+        "projectUniqueName": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloBlazorClient\\HelloBlazorClient.csproj",
         "projectName": "HelloBlazorClient",
-        "projectPath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloBlazorClient\\HelloBlazorClient.csproj",
+        "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloBlazorClient\\HelloBlazorClient.csproj",
         "packagesPath": "C:\\Users\\leehu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloBlazorClient\\obj\\",
+        "outputPath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloBlazorClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leehu\\AppData\\Roaming\\NuGet\\NuGet.Config",

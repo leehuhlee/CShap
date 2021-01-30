@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloWebAPI\\HelloWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloWebAPI\\HelloWebAPI.csproj",
       "projectName": "HelloWebAPI",
-      "projectPath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloWebAPI\\HelloWebAPI.csproj",
+      "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloWebAPI\\HelloWebAPI.csproj",
       "packagesPath": "C:\\Users\\leehu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloWebAPI\\obj\\",
+      "outputPath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leehu\\AppData\\Roaming\\NuGet\\NuGet.Config",

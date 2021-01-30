@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloRazor\\HelloRazor.csproj",
+      "projectUniqueName": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloRazor\\HelloRazor.csproj",
       "projectName": "HelloRazor",
-      "projectPath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloRazor\\HelloRazor.csproj",
+      "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloRazor\\HelloRazor.csproj",
       "packagesPath": "C:\\Users\\leehu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloRazor\\obj\\",
+      "outputPath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloRazor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leehu\\AppData\\Roaming\\NuGet\\NuGet.Config",

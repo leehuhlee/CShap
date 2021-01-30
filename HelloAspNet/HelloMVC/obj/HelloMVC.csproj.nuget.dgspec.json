@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloMVC\\HelloMVC.csproj": {}
+    "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloMVC\\HelloMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloMVC\\HelloMVC.csproj": {
+    "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloMVC\\HelloMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloMVC\\HelloMVC.csproj",
+        "projectUniqueName": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloMVC\\HelloMVC.csproj",
         "projectName": "HelloMVC",
-        "projectPath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloMVC\\HelloMVC.csproj",
+        "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloMVC\\HelloMVC.csproj",
         "packagesPath": "C:\\Users\\leehu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloMVC\\obj\\",
+        "outputPath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leehu\\AppData\\Roaming\\NuGet\\NuGet.Config",

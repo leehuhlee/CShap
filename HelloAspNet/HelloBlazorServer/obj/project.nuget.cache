@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DnYXevoO+/U0tk/NZyYLBkbnx4RUq6D1RlpvAViyk1cKcvlsTjR8bjYfkRf01WNEOm0L7FalhX0nVX9FtB9ApQ==",
+  "dgSpecHash": "bLE8YE9gT1PyQITZyJ+TlffKhL1uFNXbDK45dG3xRq6Wt4flL6PxqXHHq7MSJ31biEz6rq95NIUwYdL89QkNaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leehu\\source\\repos\\HelloAspNet\\HelloBlazorServer\\HelloBlazorServer.csproj",
+  "projectFilePath": "C:\\Users\\leehu\\Desktop\\CShap\\HelloAspNet\\HelloBlazorServer\\HelloBlazorServer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
