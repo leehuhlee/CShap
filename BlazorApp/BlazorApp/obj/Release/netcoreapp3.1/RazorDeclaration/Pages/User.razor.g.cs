@@ -91,33 +91,41 @@ using BlazorApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 32 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\User.razor"
+#line 34 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\User.razor"
        
-
-    string _selectedColor = "Green";
-    List<string> _options = new List<string>() { "Green", "Red", "Blue" };
-
     List<UserData> _users = new List<UserData>();
-    ShowUser _showUser;
 
     string _inputName;
+    string _btnClass = "btn btn-primary";
+
+    protected override void OnInitialized()
+    {
+        _users.Add(new UserData() { Name = "Hanna" });
+        _users.Add(new UserData() { Name = "Faker" });
+        _users.Add(new UserData() { Name = "Deft" });
+        RefreshButton();
+    }
 
     void AddUser()
     {
-        _showUser.AddUser(new UserData() { Name = _inputName });
+        _users.Add(new UserData() { Name = _inputName });
         _inputName = "";
+        RefreshButton();
     }
 
     void KickUser(UserData user)
     {
-        _showUser.KickUser(user);
+        _users.Remove(user);
+        RefreshButton();
     }
 
-    void CallbackTestFunc()
+    void RefreshButton()
     {
-        _inputName = "CallbackTest";
+        if (_users.Count() % 2 == 0)
+            _btnClass = "btn btn-primary";
+        else
+            _btnClass = "btn btn-secondary";
     }
-
 
 #line default
 #line hidden

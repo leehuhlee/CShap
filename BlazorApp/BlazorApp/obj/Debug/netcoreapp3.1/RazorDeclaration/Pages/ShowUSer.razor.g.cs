@@ -76,14 +76,13 @@ using BlazorApp.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\User.razor"
+#line 1 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\ShowUser.razor"
 using BlazorApp.Data;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/user")]
-    public partial class User : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class ShowUser : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -91,33 +90,36 @@ using BlazorApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 32 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\User.razor"
+#line 20 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\ShowUser.razor"
        
+    [CascadingParameter(Name ="ThemeColor")]
+    string _color { get; set; }
 
-    string _selectedColor = "Green";
-    List<string> _options = new List<string>() { "Green", "Red", "Blue" };
+    [Parameter]
+    public List<UserData> Users { get; set; }
 
-    List<UserData> _users = new List<UserData>();
-    ShowUser _showUser;
+    [Parameter]
+    public EventCallback CallbackTest { get; set; }
+    //public Action CallbackTest{ get; set; }
 
-    string _inputName;
-
-    void AddUser()
+    protected override void OnInitialized()
     {
-        _showUser.AddUser(new UserData() { Name = _inputName });
-        _inputName = "";
+        Users.Add(new UserData() { Name = "Hanna" });
+        Users.Add(new UserData() { Name = "Faker" });
+        Users.Add(new UserData() { Name = "Deft" });
     }
 
-    void KickUser(UserData user)
+    public void AddUser(UserData user)
     {
-        _showUser.KickUser(user);
+        Users.Add(user);
     }
 
-    void CallbackTestFunc()
+    public void KickUser(UserData user)
     {
-        _inputName = "CallbackTest";
+        Users.Remove(user);
+        CallbackTest.InvokeAsync(null);
+        //StateHasChanged();
     }
-
 
 #line default
 #line hidden

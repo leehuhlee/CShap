@@ -76,14 +76,14 @@ using BlazorApp.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\User.razor"
+#line 3 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\FetchData.razor"
 using BlazorApp.Data;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/user")]
-    public partial class User : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/fetchdata")]
+    public partial class FetchData : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -91,37 +91,19 @@ using BlazorApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 32 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\User.razor"
+#line 39 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\FetchData.razor"
        
+    private WeatherForecast[] forecasts;
 
-    string _selectedColor = "Green";
-    List<string> _options = new List<string>() { "Green", "Red", "Blue" };
-
-    List<UserData> _users = new List<UserData>();
-    ShowUser _showUser;
-
-    string _inputName;
-
-    void AddUser()
+    protected override async Task OnInitializedAsync()
     {
-        _showUser.AddUser(new UserData() { Name = _inputName });
-        _inputName = "";
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
     }
-
-    void KickUser(UserData user)
-    {
-        _showUser.KickUser(user);
-    }
-
-    void CallbackTestFunc()
-    {
-        _inputName = "CallbackTest";
-    }
-
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WeatherForecastService ForecastService { get; set; }
     }
 }
 #pragma warning restore 1591

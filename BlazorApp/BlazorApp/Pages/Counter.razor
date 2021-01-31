@@ -2,7 +2,7 @@
 
 @using System.Threading;
 
-<h1>Counter</h1>
+<h1 style="color:@_color">Counter</h1>
 
 <p>Current count: @currentCount</p>
 
@@ -11,6 +11,9 @@
 
 
 @code {
+    [CascadingParameter(Name = "ThemeColor")]
+    string _color { get; set; }
+
     private int currentCount = 0;
 
     private void IncrementCount()
