@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leehu\\source\\repos\\BlazorApp\\BlazorApp\\BlazorApp.csproj": {}
+    "C:\\Users\\leehu\\Desktop\\CShap\\BlazorApp\\BlazorApp\\BlazorApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leehu\\source\\repos\\BlazorApp\\BlazorApp\\BlazorApp.csproj": {
+    "C:\\Users\\leehu\\Desktop\\CShap\\BlazorApp\\BlazorApp\\BlazorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leehu\\source\\repos\\BlazorApp\\BlazorApp\\BlazorApp.csproj",
+        "projectUniqueName": "C:\\Users\\leehu\\Desktop\\CShap\\BlazorApp\\BlazorApp\\BlazorApp.csproj",
         "projectName": "BlazorApp",
-        "projectPath": "C:\\Users\\leehu\\source\\repos\\BlazorApp\\BlazorApp\\BlazorApp.csproj",
+        "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\BlazorApp\\BlazorApp\\BlazorApp.csproj",
         "packagesPath": "C:\\Users\\leehu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leehu\\source\\repos\\BlazorApp\\BlazorApp\\obj\\",
+        "outputPath": "C:\\Users\\leehu\\Desktop\\CShap\\BlazorApp\\BlazorApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leehu\\AppData\\Roaming\\NuGet\\NuGet.Config",
