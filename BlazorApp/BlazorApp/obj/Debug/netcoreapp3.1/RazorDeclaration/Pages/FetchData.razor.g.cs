@@ -91,13 +91,34 @@ using BlazorApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 39 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\FetchData.razor"
+#line 68 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\FetchData.razor"
        
-    private WeatherForecast[] forecasts;
+    private List<WeatherForecast> _forecasts;
+
+    bool _showPopup = false;
+    WeatherForecast _addForecast;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        _forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+    }
+
+    void AddNewForecast()
+    {
+        _showPopup = true;
+        _addForecast = new WeatherForecast();
+    }
+
+    void SaveForecast()
+    {
+        _showPopup = false;
+        _addForecast.Date = DateTime.Now;
+        _forecasts.Add(_addForecast);
+    }
+
+    void ClosePopup()
+    {
+        _showPopup = false;
     }
 
 #line default

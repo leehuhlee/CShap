@@ -1,7 +1,33 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+@using BlazorApp.Data 
+@inject IFoodService foodService
+@inject PaymentService  paymentService
 
-Welcome to your new app.
+@inject SingletonService singleton
+@inject TransientService transient
+@inject ScopeService scoped
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<div>
+    @foreach (var food in foodService.GetFoods())
+    {
+        <div>@food.Name</div>
+        <div>@food.Price</div>
+    }
+</div>
+
+<div>
+    <h1>Singleton</h1>
+    Guid: @singleton.ID
+    <h1>Transient</h1>
+    Guid: @transient.ID
+    <h1>Scoped</h1>
+    Guid: @scoped.ID
+</div>
+
+@code{      
+    protected override void OnInitialized()
+    {
+
+    }
+}

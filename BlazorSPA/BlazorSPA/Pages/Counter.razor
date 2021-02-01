@@ -1,0 +1,23 @@
+﻿@page "/counter"
+@page "/counter/{CurrentCount:int}"
+@layout MainLayout2 
+@inject NavigationManager navManager
+
+<h1>Counter</h1>
+
+<p>Current count: @CurrentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<a class="btn btn-primaty" href="FetchData">Go FetchData</a>
+
+@code {
+    private void IncrementCount()
+    {
+        CurrentCount++;
+        navManager.NavigateTo("FetchData");
+    }
+
+    [Parameter]
+    public int CurrentCount { get; set; }
+}

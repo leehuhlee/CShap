@@ -106,3 +106,5 @@ C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\BlazorA
 C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\BlazorApp.pdb
 C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\BlazorApp.genruntimeconfig.cache
 C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\BlazorApp.csproj.CopyComplete
+C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\TableTemplate.razor.g.cs
+C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\Razor\Pages\TableTemplate.razor.g.cs
