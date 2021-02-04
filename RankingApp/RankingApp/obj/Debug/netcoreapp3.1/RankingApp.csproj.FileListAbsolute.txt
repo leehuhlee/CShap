@@ -68,8 +68,6 @@ C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Ranki
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.RazorComponent.input.cache
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
-C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Counter.razor.g.cs
-C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FetchData.razor.g.cs
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\LoginDisplay.razor.g.cs
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
@@ -82,8 +80,6 @@ C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Ranki
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.TagHelpers.output.cache
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.RazorCoreGenerate.cache
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
-C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Razor\Pages\Counter.razor.g.cs
-C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Razor\Pages\FetchData.razor.g.cs
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Razor\Shared\LoginDisplay.razor.g.cs
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
@@ -106,3 +102,5 @@ C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Ranki
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.dll
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.pdb
 C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RankingApp.genruntimeconfig.cache
+C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Ranking.razor.g.cs
+C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\obj\Debug\netcoreapp3.1\Razor\Pages\Ranking.razor.g.cs

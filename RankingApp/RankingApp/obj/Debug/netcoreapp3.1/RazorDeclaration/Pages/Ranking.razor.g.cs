@@ -75,8 +75,22 @@ using RankingApp.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
-    public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\Pages\Ranking.razor"
+using RankingApp.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\Pages\Ranking.razor"
+using RankingApp.Data.Services;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/ranking")]
+    public partial class Ranking : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -84,18 +98,20 @@ using RankingApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\Pages\Counter.razor"
+#line 36 "C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\Pages\Ranking.razor"
        
-    private int currentCount = 0;
 
-    private void IncrementCount()
+    List<GameResult> _gameResults;
+
+    protected override async Task OnInitializedAsync()
     {
-        currentCount++;
+        _gameResults = await RankingService.GetGameResultsAsync();
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private RankingService RankingService { get; set; }
     }
 }
 #pragma warning restore 1591

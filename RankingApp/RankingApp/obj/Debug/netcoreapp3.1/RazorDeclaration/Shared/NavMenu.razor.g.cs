@@ -83,7 +83,7 @@ using RankingApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\Shared\NavMenu.razor"
+#line 23 "C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

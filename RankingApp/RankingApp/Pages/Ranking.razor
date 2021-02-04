@@ -1,0 +1,44 @@
+﻿@page "/ranking" 
+@using RankingApp.Data.Models 
+@using RankingApp.Data.Services
+
+@inject RankingService RankingService  
+
+<h3>Ranking</h3>
+
+@if(_gameResults == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>UserName</th>
+                <th>Score</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var gameResult in _gameResults)
+            {
+                <tr>
+                    <td>@gameResult.UserName</td>
+                    <td>@gameResult.Score</td>
+                    <td>@gameResult.Date</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    List<GameResult> _gameResults;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _gameResults = await RankingService.GetGameResultsAsync();
+    }
+}
