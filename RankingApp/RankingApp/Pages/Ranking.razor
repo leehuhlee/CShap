@@ -20,6 +20,8 @@
                         <th>UserName</th>
                         <th>Score</th>
                         <th>Date</th>
+                        <th>Update</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,6 +31,8 @@
                             <td>@gameResult.UserName</td>
                             <td>@gameResult.Score</td>
                             <td>@gameResult.Date</td>
+                            <td><button class="btn btn-primary" @onclick="()=>UpdateGameResult(gameResult)">Update</button></td>
+                            <td><button class="btn btn-warning" @onclick="()=>DeleteGameResult(gameResult)">Delete</button></td>
                         </tr>
                     }
                 </tbody>
@@ -83,7 +87,7 @@
     void AddGameResult()
     {
         _showPopup = true;
-        _gameResult = new GameResult() { id = 0 };
+        _gameResult = new GameResult() { Id = 0 };
     }
 
     void ClosePopup()
@@ -91,20 +95,36 @@
         _showPopup = false;
     }
 
+    void UpdateGameResult(GameResult gameResult)
+    {
+        _showPopup = true;
+        _gameResult = gameResult;
+    }
+
+    async Task DeleteGameResult(GameResult gameResult)
+    {
+        var result = RankingService.DeleteGameResult(gameResult);
+        _gameResults = await RankingService.GetGameResultsAsync();
+    }
+
     async Task SaveGameResult()
     {
-        if (_gameResult.id == 0)
+        if (_gameResult.Id == 0)
         {
             _gameResult.Date = DateTime.Now;
             var result = RankingService.AddGameResult(_gameResult);
         }
         else
         {
-            //TODO
+            var result = RankingService.UpdateGameResult(_gameResult);
         }
 
         _gameResults = await RankingService.GetGameResultsAsync();
         _showPopup = false;
     }
+
+
+
+
 }
 

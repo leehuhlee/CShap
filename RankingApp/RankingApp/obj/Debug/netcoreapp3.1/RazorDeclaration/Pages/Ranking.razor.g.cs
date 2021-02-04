@@ -98,7 +98,7 @@ using RankingApp.Data.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 74 "C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\Pages\Ranking.razor"
+#line 75 "C:\Users\leehu\Desktop\CShap\RankingApp\RankingApp\Pages\Ranking.razor"
        
 
     List<GameResult> _gameResults;
@@ -114,7 +114,7 @@ using RankingApp.Data.Services;
     void AddGameResult()
     {
         _showPopup = true;
-        _gameResult = new GameResult() { id = 0 };
+        _gameResult = new GameResult() { Id = 0 };
     }
 
     void ClosePopup()
@@ -122,21 +122,37 @@ using RankingApp.Data.Services;
         _showPopup = false;
     }
 
+    void UpdateGameResult(GameResult gameResult)
+    {
+        _showPopup = true;
+        _gameResult = gameResult;
+    }
+
+    async Task DeleteGameResult(GameResult gameResult)
+    {
+        var result = RankingService.DeleteGameResult(gameResult);
+        _gameResults = await RankingService.GetGameResultsAsync();
+    }
+
     async Task SaveGameResult()
     {
-        if (_gameResult.id == 0)
+        if (_gameResult.Id == 0)
         {
             _gameResult.Date = DateTime.Now;
             var result = RankingService.AddGameResult(_gameResult);
         }
         else
         {
-            //TODO
+            var result = RankingService.UpdateGameResult(_gameResult);
         }
 
         _gameResults = await RankingService.GetGameResultsAsync();
         _showPopup = false;
     }
+
+
+
+
 
 #line default
 #line hidden
