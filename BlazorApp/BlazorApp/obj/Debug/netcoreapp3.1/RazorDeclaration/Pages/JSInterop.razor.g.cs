@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp.Shared
+namespace BlazorApp.Pages
 {
     #line hidden
     using System;
@@ -75,7 +75,8 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase, IDisposable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/JSInterop")]
+    public partial class JSInterop : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -83,36 +84,27 @@ using BlazorApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 46 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Shared\NavMenu.razor"
+#line 19 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\JSInterop.razor"
        
-    private bool collapseNavMenu = true;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    string _name = "";
 
-    private void ToggleNavMenu()
+    public async void HelloWorld()
     {
-        collapseNavMenu = !collapseNavMenu;
+        await JSRuntime.InvokeVoidAsync("testFunction.helloWorld", null);
     }
 
-    protected override void OnInitialized()
+    public async void InputName()
     {
-        CounterState.OnStateChanged += onStateChanged;
-    }
+        _name = await JSRuntime.InvokeAsync<string>("testFunction.inputName", "Input Name");
 
-    void onStateChanged()
-    {
-        this.StateHasChanged();
-    }
-
-    void IDisposable.Dispose()
-    {
-        CounterState.OnStateChanged -= onStateChanged;
+        StateHasChanged();
     }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private BlazorApp.Data.CounterState CounterState { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JSRuntime { get; set; }
     }
 }
 #pragma warning restore 1591
