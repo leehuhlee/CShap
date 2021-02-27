@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMO_EFCore", "MMO_EFCore\MMO_EFCore.csproj", "{9424818E-7C30-4C0F-802A-D5C54625A769}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9424818E-7C30-4C0F-802A-D5C54625A769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9424818E-7C30-4C0F-802A-D5C54625A769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9424818E-7C30-4C0F-802A-D5C54625A769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9424818E-7C30-4C0F-802A-D5C54625A769}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB10F469-E876-4340-A543-445FF8E7F2D3}
+	EndGlobalSection
+EndGlobal
