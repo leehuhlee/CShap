@@ -91,7 +91,7 @@ using BlazorApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\Index.razor"
+#line 30 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\Index.razor"
             
     protected override void OnInitialized()
     {

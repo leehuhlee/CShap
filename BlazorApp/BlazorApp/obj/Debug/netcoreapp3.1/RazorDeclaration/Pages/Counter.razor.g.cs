@@ -76,7 +76,7 @@ using BlazorApp.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\Counter.razor"
+#line 4 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\Counter.razor"
 using System.Threading;
 
 #line default
@@ -91,16 +91,14 @@ using System.Threading;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 13 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\Counter.razor"
+#line 14 "C:\Users\leehu\Desktop\CShap\BlazorApp\BlazorApp\Pages\Counter.razor"
        
     [CascadingParameter(Name = "ThemeColor")]
     string _color { get; set; }
 
-    private int currentCount = 0;
-
     private void IncrementCount()
     {
-        currentCount++;
+        CounterState.Count++;
     }
 
     void AutoIncrement()
@@ -118,6 +116,7 @@ using System.Threading;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private BlazorApp.Data.CounterState CounterState { get; set; }
     }
 }
 #pragma warning restore 1591
