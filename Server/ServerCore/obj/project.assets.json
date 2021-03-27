@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leehu\\Desktop\\CShap\\RankingApp\\SharedData\\SharedData.csproj",
-      "projectName": "SharedData",
-      "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\RankingApp\\SharedData\\SharedData.csproj",
+      "projectUniqueName": "C:\\Users\\leehu\\Desktop\\CShap\\Server\\ServerCore\\ServerCore.csproj",
+      "projectName": "ServerCore",
+      "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\Server\\ServerCore\\ServerCore.csproj",
       "packagesPath": "C:\\Users\\leehu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leehu\\Desktop\\CShap\\RankingApp\\SharedData\\obj\\",
+      "outputPath": "C:\\Users\\leehu\\Desktop\\CShap\\Server\\ServerCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leehu\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leehu\\Desktop\\CShap\\RankingApp\\SharedData\\SharedData.csproj": {}
+    "C:\\Users\\leehu\\Desktop\\CShap\\Server\\DummyClient\\DummyClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leehu\\Desktop\\CShap\\RankingApp\\SharedData\\SharedData.csproj": {
+    "C:\\Users\\leehu\\Desktop\\CShap\\Server\\DummyClient\\DummyClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leehu\\Desktop\\CShap\\RankingApp\\SharedData\\SharedData.csproj",
-        "projectName": "SharedData",
-        "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\RankingApp\\SharedData\\SharedData.csproj",
+        "projectUniqueName": "C:\\Users\\leehu\\Desktop\\CShap\\Server\\DummyClient\\DummyClient.csproj",
+        "projectName": "DummyClient",
+        "projectPath": "C:\\Users\\leehu\\Desktop\\CShap\\Server\\DummyClient\\DummyClient.csproj",
         "packagesPath": "C:\\Users\\leehu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leehu\\Desktop\\CShap\\RankingApp\\SharedData\\obj\\",
+        "outputPath": "C:\\Users\\leehu\\Desktop\\CShap\\Server\\DummyClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\leehu\\AppData\\Roaming\\NuGet\\NuGet.Config",
