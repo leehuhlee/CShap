@@ -6,35 +6,28 @@ namespace ServerCore
 {
     class Program
     {
-        volatile static bool _stop = false;
-
-        static void ThreadMain()
-        {
-            Console.WriteLine("Start Thread!");
-
-            while(_stop == false)
-            {
-                // wait stop signal
-            }
-
-            Console.WriteLine("Stop Thread!");
-        }
-
+        
         static void Main(string[] args)
         {
-            Task t = new Task(ThreadMain);
-            t.Start();
+            int[,] arr = new int [10000, 10000];
 
-            Thread.Sleep(1000);
+            {
+                long now = DateTime.Now.Ticks;
+                for (int y = 0; y < 10000; y++)
+                    for (int x = 0; x < 10000; x++)
+                        arr[y, x] = 1;
+                long end = DateTime.Now.Ticks;
+                Console.WriteLine($"(y, x) order spent time {end-now}");
+            }
 
-            _stop = true;
-
-            Console.WriteLine("Stop Call");
-            Console.WriteLine("Waiting End");
-
-            t.Wait();
-
-            Console.WriteLine("Success End");
+            {
+                long now = DateTime.Now.Ticks;
+                for (int y = 0; y < 10000; y++)
+                    for (int x = 0; x < 10000; x++)
+                        arr[x, y] = 1;
+                long end = DateTime.Now.Ticks;
+                Console.WriteLine($"(x, y) order spent time {end-now}");
+            }
         }
     }
 }
