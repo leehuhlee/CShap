@@ -4,50 +4,28 @@ using System.Threading.Tasks;
 
 namespace ServerCore
 {
-    class SpinLock
-    {
-        volatile int _locked = 0;
-
-        public void Acquire()
-        {
-            while(true)
-            {
-                int expected = 0;
-                int desired = 1;
-                if (Interlocked.CompareExchange(ref _locked, desired, expected) == expected)
-                    break;
-            }
-        }
-
-        public void Release()
-        {
-            _locked = 0;
-        }
-    }
-
     class Program
     {
-
         static int _num = 0;
-        static SpinLock _lock = new SpinLock();
+        static Mutex _lock = new Mutex();
 
         static void Thread_1()
         {
-            for(int i=0; i<100000; i++)
+            for(int i=0; i<10000; i++)
             {
-                _lock.Acquire();
+                _lock.WaitOne();
                 _num++;
-                _lock.Release();
+                _lock.ReleaseMutex();
             }
         }
 
         static void Thread_2()
         {
-            for (int i = 0; i < 100000; i++)
+            for (int i = 0; i < 10000; i++)
             {
-                _lock.Acquire();
+                _lock.WaitOne();
                 _num--;
-                _lock.Release();
+                _lock.ReleaseMutex();
             }
         }
 
