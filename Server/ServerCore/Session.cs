@@ -11,6 +11,11 @@ namespace ServerCore
         Socket _socket;
         int _disconnected = 0;
 
+        object _lock = new object();
+        Queue<byte[]> _sendQueue = new Queue<byte[]>();
+        bool _pending = false;
+        SocketAsyncEventArgs _sendArgs = new SocketAsyncEventArgs();
+
         public void Start(Socket socket)
         {
             _socket = socket;
@@ -18,12 +23,19 @@ namespace ServerCore
             recvArgs.Completed += new EventHandler<SocketAsyncEventArgs>(OnRecvCompleted);
             recvArgs.SetBuffer(new byte[1024], 0, 1024);
 
+            _sendArgs.Completed += new EventHandler<SocketAsyncEventArgs>(OnSendCompeleted);
+
             RegisterRecv(recvArgs);
         }
 
         public void Send(byte[] sendBuff)
         {
-            _socket.Send(sendBuff);
+            lock (_lock)
+            {
+                _sendQueue.Enqueue(sendBuff);
+                if (_pending == false)
+                    RegisterSend();
+            }
         }
 
         public void Disconnect()
@@ -36,6 +48,42 @@ namespace ServerCore
         }
 
         #region Network Communication
+
+        void RegisterSend()
+        {
+            _pending = true;
+            byte[] buff = _sendQueue.Dequeue();
+            _sendArgs.SetBuffer(buff, 0, buff.Length);
+
+            bool pending = _socket.SendAsync(_sendArgs);
+            if (pending == false)
+                OnSendCompeleted(null, _sendArgs);
+        }
+
+        void OnSendCompeleted(object sender, SocketAsyncEventArgs args)
+        {
+            lock (_lock)
+            {
+                if (args.BytesTransferred > 0 && args.SocketError == SocketError.Success)
+                {
+                    try
+                    {
+                        if (_sendQueue.Count > 0)
+                            RegisterSend();
+                        else
+                            _pending = false;
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine($"OnSendCompeleted Failed {e}");
+                    }
+                }
+                else
+                {
+                    Disconnect();
+                }
+            }
+        }
 
         void RegisterRecv(SocketAsyncEventArgs args)
         {
