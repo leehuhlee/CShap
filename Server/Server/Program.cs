@@ -26,10 +26,11 @@ namespace Server
             Console.WriteLine($"OnDisconnected: {endPoint}");
         }
 
-        public override void OnRecv(ArraySegment<byte> buffer)
+        public override int OnRecv(ArraySegment<byte> buffer)
         {
             string recvData = Encoding.UTF8.GetString(buffer.Array, buffer.Offset, buffer.Count);
             Console.WriteLine($"[From Client] {recvData}");
+            return buffer.Count;
         }
 
         public override void OnSend(int numOfBytes)
@@ -44,7 +45,6 @@ namespace Server
 
         static void Main(string[] args)
         {
-            // DNS(Domain Name System)
             string host = Dns.GetHostName();
             IPHostEntry ipHost = Dns.GetHostEntry(host);
             IPAddress ipAddr = ipHost.AddressList[0];
