@@ -15,7 +15,6 @@ namespace Server
 
         public abstract ArraySegment<byte> Write();
         public abstract void Read(ArraySegment<byte> s);
-
     }
 
     class PlayerInfoReq : Packet
@@ -156,7 +155,7 @@ namespace Server
 
                         foreach(PlayerInfoReq.SkillInfo skill in p.skills)
                         {
-                            Console.WriteLine($"Skill({skill.id})({skill.level}({skill.duration})");
+                            Console.WriteLine($"Skill({skill.id})({skill.level})({skill.duration})");
                         }
                     }
                     break;
