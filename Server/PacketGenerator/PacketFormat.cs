@@ -4,15 +4,36 @@ using System.Text;
 
 namespace PacketGenerator
 {
+    // {0} Packet Name/Number List
+    // {1} Packet List
     class PacketFormat
     {
+        public static string fileFormat =
+@"using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Net;
+using ServerCore;
+
+public enum PacketID
+{{
+    {0}
+}}
+
+{1}";
+
+        // {0} Packet Name
+        // {1} Packet Number
+        public static string packetEnumFormat = 
+@"{0} = {1},";
+
+
         // {0} Packet Name
         // {1} Member Variable
         // {2} Member Variable Read
         // {3} Member Variable Write
         public static string packetFormat =
-@"
-class {0}
+@"class {0}
 {{
     {1}   
     
@@ -22,7 +43,6 @@ class {0}
         ReadOnlySpan<byte> s = new ReadOnlySpan<byte>(segment.Array, segment.Offset, segment.Count);
         count += sizeof(ushort);
         count += sizeof(ushort);
-
         {2}
     }}
 
@@ -35,21 +55,17 @@ class {0}
         count += sizeof(ushort);
         success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), (ushort)PacketID.{0});
         count += sizeof(ushort);
-
         {3}
-
         success &= BitConverter.TryWriteBytes(s, count);
         if (success == false)
             return null;
         return SendBufferHelper.Close(count);
     }}
-}}
-";
+}}";
         // {0} Variable Type
         // {1} Variable Name
         public static string memberFormat = 
 @"public {0} {1};";
-
 
         // {0} List Name[Capital]
         // {1} List Name[small]
@@ -57,7 +73,7 @@ class {0}
         // {3} Member Variables Read
         // {4} Member Variables Write
         public static string memberListFormat =
-@" 
+@"
 public struct {0}
 {{
     {2}
@@ -73,12 +89,9 @@ public struct {0}
         {4}
         return success;
     }}
-
-    
 }}
 
-public List<{0}> {1}s = new List<{0}>();
-";
+public List<{0}> {1}s = new List<{0}>();";
 
         // {0} Variable Name
         // {1} To~ Variable Type
@@ -86,6 +99,12 @@ public List<{0}> {1}s = new List<{0}>();
         public static string readFormat =
 @"this.{0} = BitConverter.{1}(s.Slice(count, s.Length - count));
 count += sizeof({2});";
+
+        // {0} Variable Name
+        // {1} Variable Type
+        public static string readByteFormat =
+@"this.{0} = ({1})segment.Array[segment.Offset + count];
+count += sizeof({1});";
 
         // {0} Variable Name
         public static string readStringFormat =
@@ -113,6 +132,11 @@ for(int i=0; i<{1}Len; i++)
  @"success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), this.{0});
 count += sizeof({1});";
 
+        // {0} Variable Name
+        // {1} Variable Type
+        public static string writeByteFormat =
+@"segment.Array[segment.Offset + count] = ({1})this.{0} ;
+count += sizeof({1});";
 
         // {0} Variable Name
         public static string writeStringFormat =
