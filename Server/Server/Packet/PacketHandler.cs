@@ -3,20 +3,21 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Server
+class PacketHandler
 {
-    class PacketHandler
+    public static void C_PlayerInfoReqHandler(PacketSession session, IPacket packet)
     {
-        public static void PlayerInfoReqHandler(PacketSession session, IPacket packet)
+        C_PlayerInfoReq p = packet as C_PlayerInfoReq;
+
+        Console.WriteLine($"PlaeyrInfoReq: { p.playerId } {p.name}");
+
+        foreach (C_PlayerInfoReq.Skill skill in p.skills)
         {
-            PlayerInfoReq p = packet as PlayerInfoReq;
-
-            Console.WriteLine($"PlaeyrInfoReq: { p.playerId } {p.name}");
-
-            foreach (PlayerInfoReq.Skill skill in p.skills)
-            {
-                Console.WriteLine($"Skill({skill.id})({skill.level})({skill.duration})({skill.attributes.Count})");
-            }
+            Console.WriteLine($"Skill({skill.id})({skill.level})({skill.duration})({skill.attributes.Count})");
         }
+    }
+
+    public static void TestHandler(PacketSession session, IPacket packet)
+    {
     }
 }
