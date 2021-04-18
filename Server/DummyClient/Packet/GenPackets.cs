@@ -19,6 +19,7 @@ interface IPacket
 }
 
 
+
 class C_Chat : IPacket
 {
     public string chat;   
@@ -55,7 +56,8 @@ class C_Chat : IPacket
             return null;
         return SendBufferHelper.Close(count);
     }
-}class S_Chat : IPacket
+}
+class S_Chat : IPacket
 {
     public int playerId;
 	public string chat;   
