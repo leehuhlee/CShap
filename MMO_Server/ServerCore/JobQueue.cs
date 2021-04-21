@@ -4,56 +4,55 @@ using System.Text;
 
 namespace ServerCore
 {
-    public interface IJobQueue
-    {
-        void Push(Action job);
-    }
+	public interface IJobQueue
+	{
+		void Push(Action job);
+	}
 
-    public class JobQueue : IJobQueue
-    {
-        Queue<Action> _jobQueue = new Queue<Action>();
-        object _lock = new object();
-        bool _flush = false;
+	public class JobQueue : IJobQueue
+	{
+		Queue<Action> _jobQueue = new Queue<Action>();
+		object _lock = new object();
+		bool _flush = false;
 
-        public void Push(Action job)
-        {
-            bool flush = false;
-            lock (_lock)
-            {
-                _jobQueue.Enqueue(job);
-                if (_flush == false)
-                    flush = _flush = true;
-            }
+		public void Push(Action job)
+		{
+			bool flush = false;
 
-            if (flush)
-                Flush();
-        }
+			lock (_lock)
+			{
+				_jobQueue.Enqueue(job);
+				if (_flush == false)
+					flush = _flush = true;
+			}
 
-        void Flush()
-        {
-            while (true)
-            {
-                Action action = Pop();
-                if (action == null)
-                    return;
+			if (flush)
+				Flush();
+		}
 
-                action.Invoke();
-            }
-        }
+		void Flush()
+		{
+			while (true)
+			{
+				Action action = Pop();
+				if (action == null)
+					return;
 
-        Action Pop()
-        {
-            lock (_lock)
-            {
-                if (_jobQueue.Count == 0)
-                {
-                    _flush = false;
-                    return null;
-                }
+				action.Invoke();
+			}
+		}
 
-                return _jobQueue.Dequeue();
-            }
-        }
-
-    }
+		Action Pop()
+		{
+			lock (_lock)
+			{
+				if (_jobQueue.Count == 0)
+				{
+					_flush = false;
+					return null;
+				}
+				return _jobQueue.Dequeue();
+			}
+		}
+	}
 }
