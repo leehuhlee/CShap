@@ -74,9 +74,9 @@ namespace PacketGenerator
 				serverRegister += string.Format(PacketFormat.managerRegisterFormat, packetName) + Environment.NewLine;
 		}
 
-		// {1} 멤버 변수들
-		// {2} 멤버 변수 Read
-		// {3} 멤버 변수 Write
+		// {1} Member Variables 
+		// {2} Member Variable Read
+		// {3} Member Variable Write
 		public static Tuple<string, string, string> ParseMembers(XmlReader r)
 		{
 			string packetName = r["name"];

@@ -7,7 +7,7 @@ namespace Server
 {
 	struct JobTimerElem : IComparable<JobTimerElem>
 	{
-		public int execTick; // 실행 시간
+		public int execTick; // Execute Time
 		public Action action;
 
 		public int CompareTo(JobTimerElem other)

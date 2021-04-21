@@ -11,7 +11,6 @@ namespace ServerCore
 	{
 		public static readonly int HeaderSize = 2;
 
-		// [size(2)][packetId(2)][ ... ][size(2)][packetId(2)][ ... ]
 		public sealed override int OnRecv(ArraySegment<byte> buffer)
 		{
 			int processLen = 0;
@@ -19,16 +18,13 @@ namespace ServerCore
 
 			while (true)
 			{
-				// 최소한 헤더는 파싱할 수 있는지 확인
 				if (buffer.Count < HeaderSize)
 					break;
 
-				// 패킷이 완전체로 도착했는지 확인
 				ushort dataSize = BitConverter.ToUInt16(buffer.Array, buffer.Offset);
 				if (buffer.Count < dataSize)
 					break;
 
-				// 여기까지 왔으면 패킷 조립 가능
 				OnRecvPacket(new ArraySegment<byte>(buffer.Array, buffer.Offset, dataSize));
 				packetCount++;
 
@@ -37,7 +33,7 @@ namespace ServerCore
 			}
 
 			if (packetCount > 1)
-				Console.WriteLine($"패킷 모아보내기 : {packetCount}");
+				Console.WriteLine($"Packet Merge Sending : {packetCount}");
 
 			return processLen;
 		}
@@ -118,7 +114,7 @@ namespace ServerCore
 			Clear();
 		}
 
-		#region 네트워크 통신
+		#region Network Communication
 
 		void RegisterSend()
 		{
@@ -199,14 +195,12 @@ namespace ServerCore
 			{
 				try
 				{
-					// Write 커서 이동
 					if (_recvBuffer.OnWrite(args.BytesTransferred) == false)
 					{
 						Disconnect();
 						return;
 					}
 
-					// 컨텐츠 쪽으로 데이터를 넘겨주고 얼마나 처리했는지 받는다
 					int processLen = OnRecv(_recvBuffer.ReadSegment);
 					if (processLen < 0 || _recvBuffer.DataSize < processLen)
 					{
@@ -214,7 +208,6 @@ namespace ServerCore
 						return;
 					}
 
-					// Read 커서 이동
 					if (_recvBuffer.OnRead(processLen) == false)
 					{
 						Disconnect();

@@ -30,7 +30,6 @@ namespace ServerCore
 
 	public class SendBuffer
 	{
-		// [][][][][][][][][u][]
 		byte[] _buffer;
 		int _usedSize = 0;
 

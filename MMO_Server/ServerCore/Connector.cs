@@ -14,7 +14,7 @@ namespace ServerCore
 		{
 			for (int i = 0; i < count; i++)
 			{
-				// 휴대폰 설정
+				// Setting
 				Socket socket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 				_sessionFactory = sessionFactory;
 

@@ -6,7 +6,7 @@ namespace PacketGenerator
 {
 	class PacketFormat
 	{
-		// {0} 패킷 등록
+		// {0} Packet Asign
 		public static string managerFormat =
 @"using ServerCore;
 using System;
@@ -56,13 +56,13 @@ class PacketManager
 	}}
 }}";
 
-		// {0} 패킷 이름
+		// {0} Packet Name
 		public static string managerRegisterFormat =
 @"		_onRecv.Add((ushort)PacketID.{0}, MakePacket<{0}>);
 		_handler.Add((ushort)PacketID.{0}, PacketHandler.{0}Handler);";
 
-		// {0} 패킷 이름/번호 목록
-		// {1} 패킷 목록
+		// {0} Packet Name/Number List
+		// {1} Packet List
 		public static string fileFormat =
 @"using System;
 using System.Collections.Generic;
@@ -85,16 +85,16 @@ interface IPacket
 {1}
 ";
 
-		// {0} 패킷 이름
-		// {1} 패킷 번호
+		// {0} Packet Name
+		// {1} Packet Number
 		public static string packetEnumFormat =
 @"{0} = {1},";
 
 
-		// {0} 패킷 이름
-		// {1} 멤버 변수들
-		// {2} 멤버 변수 Read
-		// {3} 멤버 변수 Write
+		// {0} Packet Name
+		// {1} Member Variable
+		// {2} Member Variable Read
+		// {3} Member Variable Write
 		public static string packetFormat =
 @"
 class {0} : IPacket
@@ -132,16 +132,16 @@ class {0} : IPacket
 	}}
 }}
 ";
-		// {0} 변수 형식
-		// {1} 변수 이름
+		// {0} Variable Type
+		// {1} Variable Name
 		public static string memberFormat =
 @"public {0} {1};";
 
-		// {0} 리스트 이름 [대문자]
-		// {1} 리스트 이름 [소문자]
-		// {2} 멤버 변수들
-		// {3} 멤버 변수 Read
-		// {4} 멤버 변수 Write
+		// {0} List Name [Capital]
+		// {1} List Name [small]
+		// {2} Member Variables
+		// {3} Member Variable Read
+		// {4} Member Variable Write
 		public static string memberListFormat =
 @"public class {0}
 {{
@@ -161,28 +161,28 @@ class {0} : IPacket
 }}
 public List<{0}> {1}s = new List<{0}>();";
 
-		// {0} 변수 이름
-		// {1} To~ 변수 형식
-		// {2} 변수 형식
+		// {0} Variable Name
+		// {1} To~ Variable Type
+		// {2} Variable Type
 		public static string readFormat =
 @"this.{0} = BitConverter.{1}(s.Slice(count, s.Length - count));
 count += sizeof({2});";
 
-		// {0} 변수 이름
-		// {1} 변수 형식
+		// {0} Variable Name
+		// {1} Variable Type
 		public static string readByteFormat =
 @"this.{0} = ({1})segment.Array[segment.Offset + count];
 count += sizeof({1});";
 
-		// {0} 변수 이름
+		// {0} Variable Name
 		public static string readStringFormat =
 @"ushort {0}Len = BitConverter.ToUInt16(s.Slice(count, s.Length - count));
 count += sizeof(ushort);
 this.{0} = Encoding.Unicode.GetString(s.Slice(count, {0}Len));
 count += {0}Len;";
 
-		// {0} 리스트 이름 [대문자]
-		// {1} 리스트 이름 [소문자]
+		// {0} List Name [Capital]
+		// {1} List Name [small]
 		public static string readListFormat =
 @"this.{1}s.Clear();
 ushort {1}Len = BitConverter.ToUInt16(s.Slice(count, s.Length - count));
@@ -194,27 +194,27 @@ for (int i = 0; i < {1}Len; i++)
 	{1}s.Add({1});
 }}";
 
-		// {0} 변수 이름
-		// {1} 변수 형식
+		// {0} Variable Name
+		// {1} Variable Type
 		public static string writeFormat =
 @"success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), this.{0});
 count += sizeof({1});";
 
-		// {0} 변수 이름
-		// {1} 변수 형식
+		// {0} Variable Name
+		// {1} Variable Type
 		public static string writeByteFormat =
 @"segment.Array[segment.Offset + count] = (byte)this.{0};
 count += sizeof({1});";
 
-		// {0} 변수 이름
+		// {0} Variable Name
 		public static string writeStringFormat =
 @"ushort {0}Len = (ushort)Encoding.Unicode.GetBytes(this.{0}, 0, this.{0}.Length, segment.Array, segment.Offset + count + sizeof(ushort));
 success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), {0}Len);
 count += sizeof(ushort);
 count += {0}Len;";
 
-		// {0} 리스트 이름 [대문자]
-		// {1} 리스트 이름 [소문자]
+		// {0} List Name [Capital]
+		// {1} List Name [small]
 		public static string writeListFormat =
 @"success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), (ushort)this.{1}s.Count);
 count += sizeof(ushort);
