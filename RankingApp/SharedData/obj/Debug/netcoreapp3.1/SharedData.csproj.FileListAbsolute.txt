@@ -1,9 +1,0 @@
-C:\Users\leehu\Desktop\CShap\RankingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.deps.json
-C:\Users\leehu\Desktop\CShap\RankingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.dll
-C:\Users\leehu\Desktop\CShap\RankingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.pdb
-C:\Users\leehu\Desktop\CShap\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.csprojAssemblyReference.cache
-C:\Users\leehu\Desktop\CShap\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.AssemblyInfoInputs.cache
-C:\Users\leehu\Desktop\CShap\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.AssemblyInfo.cs
-C:\Users\leehu\Desktop\CShap\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.csproj.CoreCompileInputs.cache
-C:\Users\leehu\Desktop\CShap\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.dll
-C:\Users\leehu\Desktop\CShap\RankingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.pdb
