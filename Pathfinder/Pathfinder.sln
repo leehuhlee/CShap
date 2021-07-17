@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pathfinder01", "Pathfinder01\Pathfinder01.csproj", "{4D741F70-26BB-4FC1-8C41-3EC53646C84A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathFinder02", "PathFinder02\PathFinder02.csproj", "{3F34D2BE-6781-4D36-9D58-8DAD79EB1662}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathFinder02", "PathFinder02\PathFinder02.csproj", "{3F34D2BE-6781-4D36-9D58-8DAD79EB1662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathFinder03", "PathFinder03\PathFinder03.csproj", "{94F910D1-F546-4C8C-9E89-DEC7EAC953C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3F34D2BE-6781-4D36-9D58-8DAD79EB1662}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F34D2BE-6781-4D36-9D58-8DAD79EB1662}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F34D2BE-6781-4D36-9D58-8DAD79EB1662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F910D1-F546-4C8C-9E89-DEC7EAC953C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F910D1-F546-4C8C-9E89-DEC7EAC953C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F910D1-F546-4C8C-9E89-DEC7EAC953C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F910D1-F546-4C8C-9E89-DEC7EAC953C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
