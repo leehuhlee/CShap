@@ -1,0 +1,15 @@
+C:\Users\leehu\source\repos\QuickSort\QuickSort\bin\Debug\net7.0\QuickSort.exe
+C:\Users\leehu\source\repos\QuickSort\QuickSort\bin\Debug\net7.0\QuickSort.deps.json
+C:\Users\leehu\source\repos\QuickSort\QuickSort\bin\Debug\net7.0\QuickSort.runtimeconfig.json
+C:\Users\leehu\source\repos\QuickSort\QuickSort\bin\Debug\net7.0\QuickSort.dll
+C:\Users\leehu\source\repos\QuickSort\QuickSort\bin\Debug\net7.0\QuickSort.pdb
+C:\Users\leehu\source\repos\QuickSort\QuickSort\obj\Debug\net7.0\QuickSort.csproj.AssemblyReference.cache
+C:\Users\leehu\source\repos\QuickSort\QuickSort\obj\Debug\net7.0\QuickSort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leehu\source\repos\QuickSort\QuickSort\obj\Debug\net7.0\QuickSort.AssemblyInfoInputs.cache
+C:\Users\leehu\source\repos\QuickSort\QuickSort\obj\Debug\net7.0\QuickSort.AssemblyInfo.cs
+C:\Users\leehu\source\repos\QuickSort\QuickSort\obj\Debug\net7.0\QuickSort.csproj.CoreCompileInputs.cache
+C:\Users\leehu\source\repos\QuickSort\QuickSort\obj\Debug\net7.0\QuickSort.dll
+C:\Users\leehu\source\repos\QuickSort\QuickSort\obj\Debug\net7.0\refint\QuickSort.dll
+C:\Users\leehu\source\repos\QuickSort\QuickSort\obj\Debug\net7.0\QuickSort.pdb
+C:\Users\leehu\source\repos\QuickSort\QuickSort\obj\Debug\net7.0\QuickSort.genruntimeconfig.cache
+C:\Users\leehu\source\repos\QuickSort\QuickSort\obj\Debug\net7.0\ref\QuickSort.dll
